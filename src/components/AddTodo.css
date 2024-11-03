@@ -1,0 +1,47 @@
+.add-todo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+  max-width: 500px;
+  margin: auto; /* Centraliza o formulário */
+}
+
+.todo-input, .todo-description, .todo-select {
+  padding: 12px;
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #ffffff;
+  transition: border-color 0.3s ease;
+}
+
+.todo-input:focus, .todo-description:focus, .todo-select:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.todo-description {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.add-button {
+  padding: 12px 25px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}

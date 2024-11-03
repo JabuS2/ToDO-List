@@ -1,0 +1,30 @@
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: auto; /* Centraliza a lista */
+    padding: 20px;
+}
+
+.filter-options {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.filter-select {
+    padding: 8px;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #ffffff;
+    transition: border-color 0.3s;
+}
+
+.filter-select:focus {
+    border-color: #4caf50;
+    outline: none;
+}

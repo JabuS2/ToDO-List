@@ -1,0 +1,85 @@
+.todo-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.2s;
+}
+
+.todo-card:hover {
+  transform: translateY(-5px);
+}
+
+.todo-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.todo-title {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+.todo-description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.todo-difficulty {
+  font-size: 14px;
+  color: #888;
+  font-style: italic;
+}
+
+.todo-status {
+  font-size: 14px;
+  color: #4caf50;
+}
+
+.delete-button {
+  align-self: flex-end;
+  background-color: #ff4c4c;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.delete-button:hover {
+  background-color: #ff3333;
+  transform: translateY(-2px);
+}
+
+.toggle-status-button {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-status-button:hover {
+  background-color: #1976d2;
+}
+
+.todo-status.completed {
+  color: green;
+  font-weight: bold;
+}
+
+.todo-status.pending {
+  color: orange;
+  font-weight: bold;
+}

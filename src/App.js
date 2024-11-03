@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';  // Importa a biblioteca React, que é necessária para criar componentes React
+import './App.css';  // Importa o arquivo de estilos CSS para estilizar o componente App
+import TodoList from './components/TodoList';  // Importa o componente TodoList, que gerenciará as tarefas da lista
 
+// Define o componente funcional App
 function App() {
+  // O componente retorna a estrutura JSX que será renderizada na tela
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>To-Do List</h1> 
+      <TodoList /> 
     </div>
   );
 }
 
-export default App;
+// Exporta o componente App para que possa ser utilizado em outros arquivos
+export default App;  
